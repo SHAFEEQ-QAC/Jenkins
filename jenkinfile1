@@ -1,0 +1,27 @@
+pipeline{
+    agent any
+
+    stages{
+        stage("Stage 1 from  GIT"){
+            steps{
+            echo "One}"
+            }
+        }
+        stage("Stage 2  from  GIT"){
+            steps{
+                
+            echo "Two"
+
+            }
+            
+        }
+         stage("Stage 3  from  GIT"){
+
+            steps{
+                
+            echo "Threeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+            }
+            
+        }
+    }
+}
