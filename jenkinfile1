@@ -1,27 +1,37 @@
 pipeline{
     agent any
-
-    stages{
-        stage("Stage 1 from  GIT"){
-            steps{
-            echo "One}"
+        stages{
+          
+            stage("First Stage"){
+                 steps {
+                    echo " ONEEEEEEEEEEEEEEEEEEEEEEE"
+                }
             }
-        }
-        stage("Stage 2  from  GIT"){
-            steps{
-                
-            echo "Two"
-
+            stage("Second Stage"){
+                steps {
+                    echo "TWOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO"
+                   
+                }
             }
-            
-        }
-         stage("Stage 3  from  GIT"){
-
-            steps{
-                
-            echo "Threeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+        stage("Third Stage"){
+                steps {
+                    echo "THREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE"
+                   
+                }
             }
-            
-        }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
